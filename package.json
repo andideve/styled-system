@@ -1,0 +1,79 @@
+{
+  "name": "@andideve/styled-system",
+  "version": "0.1.0",
+  "description": "Responsive, theme-based style props for building design systems with React",
+  "keywords": [
+    "react",
+    "css-in-js",
+    "emotion"
+  ],
+  "homepage": "https://github.com/andideve/styled-system",
+  "bugs": "https://github.com/andideve/styled-system/issues",
+  "license": "MIT",
+  "author": "Andi <andideve0@gmail.com>",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andideve/styled-system.git"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --no-cache",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "module": "dist/styled-system.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/styled-system.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/styled-system.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "dependencies": {
+    "@andideve/sx-background": "^0.1.0",
+    "@andideve/sx-border": "^0.1.0",
+    "@andideve/sx-color": "^0.1.0",
+    "@andideve/sx-core": "^0.1.0",
+    "@andideve/sx-flexbox": "^0.1.0",
+    "@andideve/sx-grid": "^0.1.0",
+    "@andideve/sx-layout": "^0.1.0",
+    "@andideve/sx-position": "^0.1.0",
+    "@andideve/sx-shadow": "^0.1.0",
+    "@andideve/sx-space": "^0.1.0",
+    "@andideve/sx-typography": "^0.1.0"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^8.1.0",
+    "husky": "^8.0.1",
+    "size-limit": "^8.1.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
