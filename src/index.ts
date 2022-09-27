@@ -1,4 +1,3 @@
-import { compose, createSfp, Theme } from '@andideve/sx-core';
 import { background, BackgroundProps } from '@andideve/sx-background';
 import { border, BorderProps } from '@andideve/sx-border';
 import { color, ColorProps } from '@andideve/sx-color';
@@ -11,9 +10,19 @@ import { space, SpaceProps } from '@andideve/sx-space';
 import { typography, TypographyProps } from '@andideve/sx-typography';
 
 export {
-  compose,
   createSfp,
+  get,
+  system,
+  compose,
+  CSSProperties,
+  CoreThemeKey,
+  ThemeKey,
   Theme,
+  SystemConfig,
+  ResponsiveValue,
+} from '@andideve/sx-core';
+
+export {
   background,
   BackgroundProps,
   border,
@@ -35,3 +44,5 @@ export {
   typography,
   TypographyProps,
 };
+
+export { toCSSVars } from './to-css-vars';

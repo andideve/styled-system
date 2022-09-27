@@ -1,6 +1,6 @@
 {
   "name": "@andideve/styled-system",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Responsive, theme-based style props for building design systems with React",
   "keywords": [
     "react",
