@@ -76,4 +76,4 @@ const shouldForwardProp = createSfp(systemProps.propNames);
 const Box = styled('div', { shouldForwardProp })(systemProps);
 ```
 
-[MIT License](LICENSE.md)
+[MIT License](LICENSE)
