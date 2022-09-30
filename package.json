@@ -1,6 +1,6 @@
 {
   "name": "@andideve/styled-system",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Responsive, theme-based style props for building design systems with React",
   "keywords": [
     "react",
@@ -59,7 +59,8 @@
     "@andideve/sx-position": "^0.1.0",
     "@andideve/sx-shadow": "^0.1.0",
     "@andideve/sx-space": "^0.1.0",
-    "@andideve/sx-typography": "^0.1.0"
+    "@andideve/sx-typography": "^0.1.0",
+    "@andideve/sx-utils": "^0.1.0"
   },
   "peerDependencies": {
     "@emotion/react": "^11.10.4",

@@ -1,5 +1,5 @@
 import { isObject, MyObject } from '@andideve/sx-core';
-import { omit } from './utils/omit';
+import { omit } from '@andideve/sx-utils';
 
 interface VarNameOptions {
   prefix?: string;

@@ -45,4 +45,6 @@ export {
   TypographyProps,
 };
 
+export * from '@andideve/sx-utils';
+
 export { toCSSVars } from './to-css-vars';
